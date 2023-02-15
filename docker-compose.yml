@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  app: 
+    container_name: learn-surrealdb-api
+    build:
+      dockerfile: api/Dockerfile
+      context: .
+  db: 
+    container_name: learn-surrealdb-db
+    build:
+      dockerfile: db/Dockerfile
+      context: .
